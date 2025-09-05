@@ -7,34 +7,55 @@
 body{
   height:100dvh;
   display:flex;
-  flex-direction: row;
+  flex-direction: column;
   outline: dotted red 3px;
 }
 
 header{
     text-align: center;
-    
+    background: linear-gradient(90deg, #f3c0c0, #f3e5c0);
     padding: 10px;
-    outline: dotted red 3px;
+    font-size: 1.5rem;
+    font-weight: bold;
 }
 
 div.main{
-    background: 001f3f;
+    background: #c0c0c0;
     padding: 2rem;
     display: flex;
     flex-grow: 1;
     gap: 2rem;
     flex-direction: row; /* Stack articles vertically */
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
-    min-height: 80vh;
+    min-height: 80dvh;
     outline: dotted red 3px;
+    flex:1;
+}
+div.topp{
+    height: 40dvh;
+    width: 100%;
+    background: linear-gradient(90deg,#c0f3f3, #a4a4e2);
+    outline: dotted red 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.bottom{
+    height: 40dvh;
+    width: 100%;
+    background: linear-gradient(90deg, #f3c0c0, #f3e5c0);
+    outline: dotted red 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 section.first{
     width: 60%;
-    height: 50dvh;
-    row-gap: 5rem;
+    height: 60dvh;
+    row-gap: 1rem;
     display: flex;
     flex-direction: column;
     outline: dotted red 3px;
@@ -42,8 +63,8 @@ section.first{
 
 section.second{
     width: 60%;
-    height: 50dvh;
-    row-gap: 5rem;
+    height: 60dvh;
+    row-gap: 1rem;
     display: flex;
     flex-direction: column;
     outline: dotted red 3px;
